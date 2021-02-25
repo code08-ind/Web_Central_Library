@@ -1,3 +1,6 @@
+let myTable = document.getElementById("myTable");
+let searchBook = document.getElementById("searchBook");
+
 showBooks();
 // If user adds a note, add it to the localStorage
 let addBtn = document.getElementById("enter");
@@ -80,3 +83,20 @@ function deleteBook(index) {
                             </div>`;
     showBooks();
 }
+
+searchBook.addEventListener('keyup', () => {
+    let filter = searchBook.value.toUpperCase();
+    let row = myTable.getElementsByTagName('tr');
+    for (let i = 0; i < row.length; i++) {
+        let td = row[i].getElementsByTagName('td')[0];
+        if (td) {
+            let textValue = td.textContent || td.innerHTML;
+            if (textValue.toUpperCase().indexOf(filter) > -1) {
+                row[i].style.display = "";
+            }
+            else {
+                row[i].style.display = "none";
+            }
+        }
+    }
+});
