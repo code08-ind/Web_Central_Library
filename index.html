@@ -37,6 +37,11 @@
                                 class="sr-only">(current)</span></a>
                     </li>
                 </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search Book By Name"
+                        aria-label="Search" id="searchBook">
+                    <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
             </div>
         </nav>
         <div id="message"></div>
@@ -79,7 +84,7 @@
             <div id="table" class=" animate__animated animate__slideInRight">
                 <h1>List Of Books</h1>
                 <div class="scrollit">
-                    <table class="table table-striped">
+                    <table class="table table-striped" id="myTable">
                         <thead>
                             <tr>
                                 <th scope="col">Name Of Book</th>
