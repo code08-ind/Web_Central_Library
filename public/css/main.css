@@ -33,6 +33,7 @@ div.container {
 
 div.container h1 {
   font-family: 'Cinzel', serif;
+  text-align: center;
 }
 
 div.container hr.styles {
