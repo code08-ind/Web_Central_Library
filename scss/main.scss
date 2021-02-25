@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+nav.navbar {
+  a.navbar-brand {
+    font-family: 'Cinzel', serif;
+  }
+  ul {
+    li {
+      a.nav-link {
+        font-family: 'Raleway', sans-serif;
+      }
+    }
+  }
+}
+
+div#message {
+  opacity: 1;
+  margin-top: 55px;
+}
+
+div.container {
+  h1 {
+    font-family: 'Cinzel', serif;
+  }
+  hr.styles {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0)
+    );
+  }
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  form {
+    width: 100%;
+    margin: 0 auto;
+    div.form-group.row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  div#table {
+    h1 {
+      text-align: center;
+      font-family: 'Cinzel', serif;
+    }
+    width: 80%;
+    margin: 0 auto;
+    div.scrollit {
+      overflow: auto;
+      height: 250px;
+    }
+    table {
+      thead {
+        tr {
+          th {
+            font-family: 'Lora', serif;
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            font-family: 'Montserrat Alternates', sans-serif;
+          }
+        }
+      }
+    }
+  }
+}

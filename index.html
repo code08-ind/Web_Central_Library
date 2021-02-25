@@ -1,0 +1,113 @@
+<!Doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" type="text/css" href="./public/css/main.css">
+        <title>Web Central Library</title>
+        <link rel="icon" href="https://cdn0.iconfinder.com/data/icons/learning-icons-rounded/110/Books-512.png"
+            type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Lora:wght@600&family=Montserrat+Alternates&family=Raleway&display=swap"
+            rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand animate__animated animate__swing" href="index.html"><img
+                    src="https://cdn0.iconfinder.com/data/icons/learning-icons-rounded/110/Books-512.png"
+                    alt="Library Picture" height="30px" width="30px" /> Web Central Library</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link animate__animated animate__swing" href="index.html">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="message"></div>
+        <div class="container">
+            <h1 class="my-5 animate__animated animate__flipInX"> <img
+                    src="https://cdn0.iconfinder.com/data/icons/learning-icons-rounded/110/Books-512.png"
+                    alt="Library Picture" height="60px" width="60px" /> Web Central Library</h1>
+            <form id="libraryForm" class="animate__animated animate__slideInRight">
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="bookName" placeholder="Enter The Book Name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="author" placeholder="Enter Author Name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="price" placeholder="Enter Cost Of Book">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="type" placeholder="Enter Type Of Book">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="pages" placeholder="Enter Number Of Pages Of Book">
+                    </div>
+                </div>
+                <div class="form-group row new">
+                    <div class="col-sm-10 btn">
+                        <button type="submit" id="enter" class="btn btn-primary">Add Book</button>
+                    </div>
+                </div>
+            </form>
+            <div id="table" class=" animate__animated animate__slideInRight">
+                <h1>List Of Books</h1>
+                <div class="scrollit">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name Of Book</th>
+                                <th scope="col">Author Name</th>
+                                <th scope="col">Cost Of Book</th>
+                                <th scope="col">Type Of Book</th>
+                                <th scope="col">No. Of Pages</th>
+                                <th scope="col">Delete Book</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    </body>
+    <script type="text/javascript" src="./public/js/main.js"></script>
+
+</html>
